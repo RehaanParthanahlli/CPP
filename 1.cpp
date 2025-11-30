@@ -68,3 +68,61 @@ int main(){
     integer marks=90;
     std::cout<<name<<'\t'<<marks;
 }*/
+
+//Arthmetic Operators! - Use Serpent Notebook!
+
+/*#include <iostream>
+int main(){
+    double x=10.66;
+    double y=(int) x;
+    char c=100;
+    std::cout<<x<<y;
+    std::cout<<c;
+    int a=8;
+    int b=10;
+    double scr=a/(double)b *100;
+    std::cout<<scr;
+}*/
+
+/*#include <iostream>
+int main(){
+    std::string nm;
+    std::cout<<"Whats your name?\n";
+    std::cin>>nm;
+    std::cout<<nm;      // << Insertion Operator >> Extersion Operator
+}*/
+/*#include <iostream>
+int main(){
+    int age;
+    std::string nme;                            
+                                                Works fine until age is getline is used at beginning
+                                                but if getline is used after using cin then it skips the getline part 
+                                                as cin has inbuilt \n as getline takes \n as input.                                                                                                           
+    std::cout<<"Enter your full name\n";             
+    std::getline(std::cin,nme);
+    std::cout<<"Enter your age\n";
+    std::cin>>age;  
+    std::cout<<age<<'\n'<<nme;
+}*/
+/*#include <iostream>
+int main(){
+    int age;
+    std::string nme; 
+    std::cout<<"Enter your age\n";
+    std::cin>>age;                                                                                                                           
+    std::cout<<"Enter your full name\n";              //See the error as run this code
+    std::getline(std::cin,nme);
+    std::cout<<age<<'\n'<<nme;
+}*/
+/*#include <iostream>
+int main(){
+    int age;
+    std::string nme; 
+    std::cout<<"Enter your age\n";
+    std::cin>>age;                                                                                                                           
+    std::cout<<"Enter your full name\n"; 
+    std::getline(std::cin>>std::ws,nme);                     //Issue Resolved!
+    std::cout<<age<<'\n'<<nme;
+}*/
+
+//
