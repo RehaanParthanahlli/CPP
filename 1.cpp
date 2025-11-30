@@ -59,3 +59,12 @@ int main(){
     int x=5;
     cout<<x;
 }*/
+
+/*#include <iostream>
+typedef std::string text_t;
+using integer=int;
+int main(){
+    text_t name="rehaan";
+    integer marks=90;
+    std::cout<<name<<'\t'<<marks;
+}*/
