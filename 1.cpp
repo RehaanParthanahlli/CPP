@@ -144,3 +144,23 @@ int main(){
 }*/
 
 //Bitwise Operators - AND | OR | NOT | XOR
+
+/*#include <iostream>
+int main(){
+    double grade=80;
+    grade>=90 ? std::cout<<"good" : std::cout<<"bad";
+    std::cout<<(grade<=70 ? "failure" : "ok!");
+}*/
+
+/*#include <iostream>
+#include <string>
+int main(){
+    std::string name;
+    std::cin>>name;
+    char x=name.at(0);
+    name.append("123");
+    name.insert(1,"@");
+    int y=name.find(' ');
+    name.erase(1,3);
+    std::cout<<name<<std::endl<<y<<x;
+}*/
