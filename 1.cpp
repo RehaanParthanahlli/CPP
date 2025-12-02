@@ -164,3 +164,14 @@ int main(){
     name.erase(1,3);
     std::cout<<name<<std::endl<<y<<x;
 }*/
+
+/*#include <iostream>
+int main(){
+    std::string name;
+    
+    while(name.empty()){
+        std::cout<<"Enter your name"; 
+        std::getline(std::cin,name);    //std::cin>>name;   cin doesn't read initial ws so dont use this but use getline function!
+    }
+    std::cout<<"hello"<<name;
+}*/
