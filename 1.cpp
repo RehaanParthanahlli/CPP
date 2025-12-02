@@ -125,4 +125,22 @@ int main(){
     std::cout<<age<<'\n'<<nme;
 }*/
 
-//
+//Mathematical Operations - https://cplusplus.com/reference/
+
+/*#include <iostream>
+int main(){
+    int Age;
+    std::cout<<"Whats your age?"<<std::endl;
+    std::cin>>Age;
+    if(Age>18 || Age==18){
+        std::cout<<"You are eligible to vote!"<<std::endl;
+    }
+    else if(Age<0 && Age!=0){
+        std::cout<<"You are not eligible to vote! as you're not born yet!"<<std::endl;
+    }
+    else{
+        std::cout<<"You are not eligible to vote!"<<std::endl;
+    }
+}*/
+
+//Bitwise Operators - AND | OR | NOT | XOR
