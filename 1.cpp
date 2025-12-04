@@ -1,5 +1,5 @@
 //We can use printf() & scanf() in C++ 
-//use this for all case #include <bits/stdlib.h>
+//use this for all case #include <bits/stdc++.h>
 
 
 /*#include <iostream>
@@ -206,4 +206,90 @@ int main(){
     std::srand(time(NULL));
     int num=(rand()%6)+1;
     std::cout<<num;
+}*/       
+//Use switch and do while to make a guess game!
+
+/*#include <Iostream>
+void func();     // Function declaration first - tell's compiler that function is somewhere in the code go fetch it.
+int main(){
+    func();
+}
+void func(){    // Function definition later
+    std::cout<<"Hi! I am Rehaan Parthanahalli.";             //Output - Hi! I am Rehaan Parthanahalli.
 }*/
+
+/*#include<bits/stdc++.h> 
+std::string gr(){
+    return "Hi";
+}
+int sum(int a,int b){
+    return a+b;
+}
+int main(){
+    int a=1,b=2;
+    std::cout<<gr()<<std::endl;
+    std::cout<<sum(a,b);
+}*/
+
+/* Overloaded function 
+func();
+func(par1,par2);
+func(par3,par4);      //Valid & No error until parameter are all different 
+*/
+
+//Banking practice program
+
+//Rock paper Scossir game.
+
+/*#include <iostream>
+int main(){
+    int age=18;
+    std::cout<<&age; //Similar to all Datas.
+}*/
+
+/*#include <iostream>
+void swap(int x,int y);
+int main(){
+    int x=8,y=9;
+    swap(x,y);
+}
+void swap(int x,int y){
+    int temp;
+    temp=x;
+    x=y;                        //Pass Value as copied version of x & y are changed but actual values aren't
+    y=temp;
+    std::cout<<x<<y;
+}*/
+
+/*#include<iostream>
+void swap(int &X,int &Y);
+int main(){
+    int x=9,y=8;
+    swap(x,y);
+}
+void swap(int &x,int &y){
+    int temp=x;
+    x=y;
+    y=temp;                 // Pass reference according to mem addr the values were swappped
+    std::cout<<x<<y;
+}*/
+
+/*#include<iostream>
+void func(const int age){
+    age=0;
+    std::cout<<age;
+}
+int main(){
+    int age=19;
+    func(age);   ///errror as age param is cont it can't be changed
+}
+#include<iostream>
+void func(const int age){
+    std::cout<<age;
+}
+int main(){
+    int age=19;
+    func(age);   ///No errror as age param is cont it can't be changed and isn't changed
+}*/
+
+//Pointer's
