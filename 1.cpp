@@ -1,3 +1,7 @@
+//We can use printf() & scanf() in C++ 
+//use this for all case #include <bits/stdlib.h>
+
+
 /*#include <iostream>
 using namespace std;
 int main() {
@@ -174,4 +178,32 @@ int main(){
         std::getline(std::cin,name);    //std::cin>>name;   cin doesn't read initial ws so dont use this but use getline function!
     }
     std::cout<<"hello"<<name;
+}*/
+/*#include <iostream>
+int main(){
+    int num;
+    std::cout<<"Positive";
+    std::cin>>num;
+    while(num<0){
+        std::cout<<"Positive";
+        std::cin>>num;                 //Default value is 0 for int & '' for string
+    }
+    std::cout<<"Number"<<num;
+}*/
+
+/*#include <iostream>
+int main(){
+    for(int i=0;i<3;i++){
+        std::cout<<i;
+    }
+}*/
+
+//Nested Loops
+
+/*#include <iostream>
+#include <ctime>
+int main(){
+    std::srand(time(NULL));
+    int num=(rand()%6)+1;
+    std::cout<<num;
 }*/
