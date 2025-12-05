@@ -292,4 +292,116 @@ int main(){
     func(age);   ///No errror as age param is cont it can't be changed and isn't changed
 }*/
 
+//Credit Card Validator - Luhn Algorithm
+
 //Pointer's
+/*#include <iostream>
+int main(){
+    int x[2]={1,2};
+    int *pX=x;                   //* deference operator 
+                                // & address of operator
+    std::cout<<pX<<x<<"\n";
+    std::cout<<*pX;
+    return 0;
+}*/
+/*#include <iostream>
+int main(){
+    int x=5;
+    int *pX=&x;
+    std::cout<<pX<<std::endl;   //Address of x
+    std::cout<<*pX<<std::endl;
+ //Value at address of x
+}*/
+
+/*#include <iostream>
+int main(){
+    int n=9;
+    int *p=nullptr;
+    p=&n;
+    if(p==nullptr){
+        std::cout<<"Adress not assigned";
+    }else{
+        std::cout<<"Address assigned";
+        std::cout<<p<<'\n';
+        std::cout<<*p;
+    }
+}*/
+
+//pass list to function
+/*#include<iostream>
+int total(int arr[], int size){
+    int sum = 0;
+    for(int i = 0; i < size; i++){
+        sum += arr[i];
+    }
+    std::cout << sum;
+    return sum;
+}
+int main(){
+    int arr[] = {1, 2};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int *pArr = arr;
+
+    for(int i = 0; i < size; i++){
+        std::cout << *(pArr + i) << std::endl;
+    }
+
+    for(int i = 0; i < size; i++){
+        std::cout << pArr[i] << std::endl;
+    }
+
+    total(pArr, size);
+}*/
+
+/*#include <iostream>
+int total(int *p) {
+    int sum = 0;
+    while (*p != -1) {   // stop when sentinel found
+        sum += *p;
+        p++;
+    }
+    return sum;
+}
+int main() {
+    int arr[] = {1, 2, -1};  // sentinel at the end
+
+    int ans = total(arr);
+    std::cout << ans;
+}*/
+
+//Search an element in list.
+
+//bubble sort
+
+/*#include<iostream>
+int main(){
+    int arr[5];
+    for(int i=0;i<5;i++){
+        std::getline(std::cin,arr[i]);
+        if (arr[i]=='q'){
+            break
+        }
+    }
+}*/
+
+/*#include<iostream>
+int main(){
+    std::string arr[5];
+    std::string temp;
+    for(int i=0;i<5;i++){
+        std::getline(std::cin,temp);
+        if(temp=="q"){
+            break;
+        }else{
+            arr[i]=temp;
+        }
+    }
+    for(int i=0;!arr[i].empty();i++){
+        std::cout<<arr[i];
+    }
+}*/
+
+//2D List
+
+//Look in video or Notebook!
