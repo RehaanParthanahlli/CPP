@@ -1,4 +1,5 @@
 //We can use printf() & scanf() in C++ 
+
 //use this for all case #include <bits/stdc++.h>
 
 
@@ -95,6 +96,7 @@ int main(){
     std::cin>>nm;
     std::cout<<nm;      // << Insertion Operator >> Extersion Operator
 }*/
+
 /*#include <iostream>
 int main(){
     int age;
@@ -108,6 +110,7 @@ int main(){
     std::cin>>age;  
     std::cout<<age<<'\n'<<nme;
 }*/
+
 /*#include <iostream>
 int main(){
     int age;
@@ -118,6 +121,7 @@ int main(){
     std::getline(std::cin,nme);
     std::cout<<age<<'\n'<<nme;
 }*/
+
 /*#include <iostream>
 int main(){
     int age;
@@ -179,6 +183,7 @@ int main(){
     }
     std::cout<<"hello"<<name;
 }*/
+
 /*#include <iostream>
 int main(){
     int num;
@@ -232,6 +237,7 @@ int main(){
 }*/
 
 /* Overloaded function 
+
 func();
 func(par1,par2);
 func(par3,par4);      //Valid & No error until parameter are all different 
@@ -295,6 +301,7 @@ int main(){
 //Credit Card Validator - Luhn Algorithm
 
 //Pointer's
+
 /*#include <iostream>
 int main(){
     int x[2]={1,2};
@@ -304,6 +311,7 @@ int main(){
     std::cout<<*pX;
     return 0;
 }*/
+
 /*#include <iostream>
 int main(){
     int x=5;
@@ -328,6 +336,7 @@ int main(){
 }*/
 
 //pass list to function
+
 /*#include<iostream>
 int total(int arr[], int size){
     int sum = 0;
@@ -413,6 +422,7 @@ int main(){
     *p=5;
     std::cout<<*p;
 }*/
+
 /*#include <iostream>
 int main(){
     int *p=nullptr;
@@ -452,6 +462,7 @@ int main(){
     std::cout<<&s1;
     printd(s1);
 }*/
+
 /*#include <iostream>
 struct std{
     std::string name;
@@ -514,6 +525,7 @@ int main(){
     stud s1("Rehan",15);
     std::cout<<s1.name;
 }*/
+
 /*#include<bits/stdc++.h>
 class stud{
     public:
@@ -526,3 +538,63 @@ int main(){
     stud s1;
     s1.name="Rehaan";
 }*/
+
+/*#include<iostream>
+class num{
+    public:
+    int age1;
+    int age2;
+    num(int age1){
+        this->age1=age1;
+    }
+    num(int age1,int age2){
+        this->age1=age1;
+        this->age2=age2;
+    }
+};
+int main(){
+    num s1(12);num s2(12,24);
+    std::cout<<s1.age1<<'\n'<<s2.age2;  //Overloaded Constructors
+}*/
+
+/*#include<iostream>
+class num{
+    public:
+    int age1;
+    int age2;
+    num(int age1){
+        this->age1=age1;
+    }
+    ~num(){
+        std::cout<<"Deleted";
+    }
+
+};
+int main(){
+    num s1(12);
+}*/
+
+/*#include <iostream>
+class stove{
+    private:
+    int temp=0;
+    public:
+    void gettemp(){     //Getter make readable not writeable
+        std::cout<<temp;
+    }
+    void settemp(int temp){   //Makes Writeable
+        this->temp=temp;
+    }
+};
+int main(){
+    stove s1;
+    std::cout<<s1.temp; //Error
+    s1.settemp(100);
+    s1.gettemp();
+}*/
+
+//About inheritance ask GPT "Explain me inheritance single level based on access specifer C++"
+
+//Read Textbook Class XII Handbook about Class Object FunctionOverloading  Constr & Destr Inheritance 
+
+//Includes concpts like defining member function outside of class | Inline function | Freind fucntion 
