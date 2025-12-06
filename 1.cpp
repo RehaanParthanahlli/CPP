@@ -405,3 +405,124 @@ int main(){
 //2D List
 
 //Look in video or Notebook!
+
+/*#include <iostream>
+int main(){
+    int *p=nullptr;
+    p=new int;
+    *p=5;
+    std::cout<<*p;
+}*/
+/*#include <iostream>
+int main(){
+    int *p=nullptr;
+    int size;
+    std::cout<<"Enter the size of L";
+    std::cin>>size;
+    p=new int[size];
+    for(int i=0;i<size;i++){
+        p[i]=i+1;
+    }
+    for(int i=0;i<size;i++){
+        std::cout<<"Elemet at"<<i-1<<"is"<<i;
+    }
+    delete[] p;
+}*/
+
+/*#include <iostream>
+template <typename T,typename U>
+T max1(T x, U y){
+    return (x > y) ? x : y;
+}
+int main(){
+    std::cout<<max1('1',2);
+}*/
+
+/*#include <iostream>
+struct std{
+    std::string name;
+}
+void printd(std s1){
+    std::cout<<s1.name;
+    std::cout<<&s1;     //Pass to Value
+}
+int main(){
+    std s1;
+    s1.name="Rehaan";
+    std::cout<<&s1;
+    printd(s1);
+}*/
+/*#include <iostream>
+struct std{
+    std::string name;
+}
+void printd(std &s1){
+    std::cout<<s1.name;
+    std::cout<<&s1;     //Pass to Reference
+}
+int main(){
+    std s1;
+    s1.name="Rehaan";
+    std::cout<<&s1;
+    printd(&s1);
+}*/
+
+/*#include <iostream>
+enum day {sunday=0,monday=1};
+int main(){
+    day today=sunday;
+    switch(today){
+        case 0:
+            std::cout<<"Its Sunday";
+            break;
+        case 1:
+            std::cout<<"Its Monday";
+            break;
+        default:
+            break;
+    }
+}*/
+
+/*#include <iostream>
+class Human{
+    public:
+    std::string name;
+    int age;
+    void eat(){
+        std::cout<<"Eat";
+    }
+};
+int main(){
+    Human h1;
+    h1.name="Rehaan";
+    h1.eat();
+}*/
+
+/*#include <iostream>
+typedef std::string t;
+class stud{
+    public:
+    t name;
+    int age;
+    stud(t name1,int age){
+        name=name1;
+        this->age=age;
+        std::cout<<name1;
+    }
+};
+int main(){
+    stud s1("Rehan",15);
+    std::cout<<s1.name;
+}*/
+/*#include<bits/stdc++.h>
+class stud{
+    public:
+    std::string name;
+    stud(){                         //Without parameter can't access name or other class attributes.
+        std::cout<<"Hi";
+    }
+};
+int main(){
+    stud s1;
+    s1.name="Rehaan";
+}*/
